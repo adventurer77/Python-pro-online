@@ -7,7 +7,7 @@ if __name__ == "__main__":
     try:
         p1 = Product("Coffee table",320,"Table for rest.","Overall size:1000 x 600 x 550 mm")
         # print(p1)
-        p2 = Product("Sofa",200,"The best sofa for relaxing.","Overall dimensions:2120x1680x1010")
+        p2 = Product("Sofa",200,"The best sofa for relaxing.","Overall size:2120x1680x1010")
         p3 = Product("Work table",450,"Table for work.","Overall size:1000 x 700 x 650 mm")
 
 
@@ -20,11 +20,12 @@ if __name__ == "__main__":
 
         
 
-        for i,q  in cart:  # Sequence protocol.
-            print (i,"\n","Quantities:",q)
+        # for i,q  in cart:  # Sequence protocol.
+        #     print (i,"\n","Quantities:",q)
 
         # print (len(cart))
-        # print(cart[2])   # Iteration protocol.
+
+        print(*cart[0:])   # Iteration protocol.
         
 
 
